@@ -8,6 +8,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
+  # preload shared_preferences instances, inspired by riverpod docs
   final prefs = await SharedPreferences.getInstance();
 
   runApp(ProviderScope(
