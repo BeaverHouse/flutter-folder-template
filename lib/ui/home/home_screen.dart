@@ -33,6 +33,12 @@ class HomeScreen extends StatelessWidget {
               buttonColor: BaseColors.primary,
               text: "See Buttons",
             ),
+            verticalBox(30),
+            RoundButton(
+              func: () => context.go("/state_test"),
+              buttonColor: BaseColors.primary,
+              text: "See State Test",
+            ),
           ],
         ),
       ),

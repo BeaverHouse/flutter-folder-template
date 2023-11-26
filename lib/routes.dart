@@ -1,6 +1,7 @@
 import 'package:beaver_dev/ui/button/button_screen.dart';
 import 'package:beaver_dev/ui/home/home_screen.dart';
 import 'package:beaver_dev/ui/login/login_screen.dart';
+import 'package:beaver_dev/ui/state_test/state_test_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -8,6 +9,7 @@ class Routes {
   static const String home = '/';
   static const String login = 'login';
   static const String button = 'button';
+  static const String stateTest = 'state_test';
 
   static final GoRouter routes = GoRouter(
     routes: <RouteBase>[
@@ -27,6 +29,12 @@ class Routes {
             path: button,
             builder: (BuildContext context, GoRouterState state) {
               return const ButtonScreen();
+            },
+          ),
+          GoRoute(
+            path: stateTest,
+            builder: (BuildContext context, GoRouterState state) {
+              return const StateTestScreen();
             },
           ),
         ],
