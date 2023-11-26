@@ -91,8 +91,9 @@ class CounterNotifier extends _$CounterNotifier {
     state = state.copyWith(savedNumber: num);
   }
 }
-
 ```
+
+Also, you can generate code with `dart run build_runner build`, like `freezed`.
 
 <br>
 
